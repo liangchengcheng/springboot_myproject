@@ -19,8 +19,6 @@ import org.springframework.messaging.handler.annotation.support.DefaultMessageHa
  */
 @Configuration
 public class RabbitMQConfigration implements RabbitListenerConfigurer{
-
-
     @Bean
     public Queue helloQueue(){
         return new Queue("hello");
